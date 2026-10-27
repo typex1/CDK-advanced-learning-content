@@ -1,39 +1,44 @@
 ## Advanced AWS CDK Learning Resources
-
-### Official Workshops & Hands-On Labs
-
-- **[AWS CDK Immersion Day Workshop](https://catalog.workshops.aws/cdkimmersionday)** — A deeper, structured workshop covering advanced CDK patterns, testing, and pipelines. Great next step after the basic workshop.
-- **[AWS Workshop Studio Catalog](https://workshops.aws)** — Filter by "CDK" and complexity level 300–400 for expert-level content. Covers topics like CDK Pipelines, multi-account deployments, and more.
-- **[AWS Builder Center Workshops](https://builder.aws.com/build/workshops)** — The full AWS workshops catalog with filtering by skill level (100-Beginner through 400-Expert), service, and category.
-
-### Advanced Topics to Explore
-
-- **[AWS CDK Pipelines](https://docs.aws.amazon.com/cdk/v2/guide/cdk_pipeline.html)** — Building self-mutating CI/CD pipelines entirely in CDK. A major real-world use case.
-- **[AWS Solutions Constructs](https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html)** — Pre-built, vetted architecture patterns (e.g., Lambda → SQS, Fargate → EventBridge) that combine multiple services with best practices baked in.
-- **[Construct Hub](https://constructs.dev)** — A registry of open-source CDK libraries from AWS and the community. Great for exploring reusable constructs.
-
-### Best Practices & Prescriptive Guidance
-
-- **[Best Practices for CDK with TypeScript](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/introduction.html)** — AWS Prescriptive Guidance covering IaC best practices, testing strategies, and project structure.
-- **[AWS CDK Layers Pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-layers/introduction.html)** — Guidance on organizing CDK apps into layers for maintainability and reuse.
-- **[cdk-nag](https://github.com/cdklabs/cdk-nag)** — A tool for enforcing security and compliance rules in CDK apps. Excellent for teaching security-aware IaC.
-
-### Testing CDK Applications
-
-- **[Testing CDK Applications](https://docs.aws.amazon.com/cdk/v2/guide/testing.html)** — Official docs on unit testing CDK stacks using fine-grained assertions and snapshot tests.
-
-### GitHub & Community
-
-- **[AWS CDK Examples (GitHub)](https://github.com/aws-samples/aws-cdk-examples)** — A large collection of real-world CDK examples across many services and languages.
-- **[AWS CDK GitHub Repository](https://github.com/aws/aws-cdk)** — Reading RFCs and issues is a great way for advanced students to understand design decisions.
+> Last verified: October 2026 | Current CDK version: aws-cdk-lib v2.275.0 / CLI v2.1146.1
 
 ---
 
-**Suggested learning path for advanced students:**
+### ⚠️ Important: CDK v1 is End-of-Life
+AWS CDK v1 reached end-of-support on **June 1, 2023**. All resources below
+refer to **CDK v2** only. Make sure your students are using `aws-cdk-lib` (v2),
+not the old `@aws-cdk/core` (v1) packages.
 
-1. CDK Pipelines (self-mutating CI/CD)
-2. Multi-account/multi-region deployments
-3. Writing and publishing custom constructs
-4. Testing with `assertions` module + `cdk-nag`
-5. AWS Solutions Constructs for production-ready patterns
-# CDK-advanced-learning-content
+---
+
+### Official Workshops & Hands-On Labs
+
+- **[AWS CDK Immersion Day Workshop](https://catalog.workshops.aws/cdkimmersionday)**
+  — Structured workshop covering advanced CDK patterns, testing, and pipelines.
+  Great next step after cdkworkshop.com. ✅ Still current.
+
+- **[AWS Workshop Studio Catalog](https://workshops.aws)**
+  — Filter by "CDK" and complexity level 300–400 for expert-level content.
+  Covers CDK Pipelines, multi-account deployments, and more. ✅ Still current.
+
+- **[AWS Builder Center Workshops](https://builder.aws.com/build/workshops)**
+  — Full AWS workshops catalog with filtering by skill level (100–400),
+  service, and category. ✅ Still current.
+
+---
+
+### Advanced Topics to Explore
+
+- **[AWS CDK Pipelines](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines-readme.html)**
+  — Self-mutating CI/CD pipelines in CDK. Use the **modern API** (not the
+  original/legacy one). Supports parallel deployments, multiple synth inputs,
+  and deployment engines beyond CodePipeline. ✅ Still current.
+
+- **[CDK Mixins](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib-readme.html)**
+  — 🆕 **NEW (GA: March 2026).** Apply composable, reusable abstractions to
+  any construct (L1, L2, or custom) using a simple `.with()` syntax — without
+  rebuilding existing infrastructure code. A major new pattern to teach.
+
+- **[cdk refactor command](https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-refactor.html)**
+  — 🆕 **NEW (Preview: September 2025).** Safely rename constructs, move
+  resources between stacks, and reorganize CDK apps without replacing deployed
+  resources. Eliminates a major pain point
