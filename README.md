@@ -9,20 +9,24 @@ refer to **CDK v2** only. Make sure your students are using `aws-cdk-lib` (v2),
 not the old `@aws-cdk/core` (v1) packages.
 
 ---
+### MCP Server
 
-### Official Workshops & Hands-On Labs
+- Great add-on for your preferred Coding Agent: the official **AWS IaC MCP Server** (inlcudes CDK features): https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server
+  - Get started with this MCP server for creating and troubleshooting AWS infrastructure as code. Tools include CloudFormation template validation, compliance checking, deployment troubleshooting, CloudFormation documentation search, AWS CDK documentation search with official CDK knowledge bases, CDK code samples and constructs, and CDK and CloudFormation best practices.
 
-- **[AWS Workshop Studio Catalog](https://workshops.aws)**
-  — Filter by "CDK" and complexity level 300–400 for expert-level content.
-  Covers CDK Pipelines, multi-account deployments, and more. ✅ Still current.
+---
 
-- **[AWS Builder Center Workshops](https://builder.aws.com/build/workshops)**
-  — Full AWS workshops catalog with filtering by skill level (100–400),
-  service, and category. ✅ Still current.
+### Official CDK sample content
+
+- **[GitHub AWS-Samples / aws-cdk-examples](https://github.com/aws-samples/aws-cdk-examples)**
+  — Official CDK sample code.
 
 ---
 
 ### Advanced Topics to Explore
+
+- **Constructs Hub**
+  - https://constructs.dev/search?cdk=aws-cdk&sort=downloadsDesc&offset=0
 
 - **[AWS CDK Pipelines](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines-readme.html)**
   — Self-mutating CI/CD pipelines in CDK. Use the **modern API** (not the
