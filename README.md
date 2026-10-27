@@ -12,10 +12,6 @@ not the old `@aws-cdk/core` (v1) packages.
 
 ### Official Workshops & Hands-On Labs
 
-- **[AWS CDK Immersion Day Workshop](https://catalog.workshops.aws/cdkimmersionday)**
-  — Structured workshop covering advanced CDK patterns, testing, and pipelines.
-  Great next step after cdkworkshop.com. ✅ Still current.
-
 - **[AWS Workshop Studio Catalog](https://workshops.aws)**
   — Filter by "CDK" and complexity level 300–400 for expert-level content.
   Covers CDK Pipelines, multi-account deployments, and more. ✅ Still current.
