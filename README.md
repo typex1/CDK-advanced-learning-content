@@ -2,13 +2,6 @@
 > Last verified: October 2026 | Current CDK version: aws-cdk-lib v2.275.0 / CLI v2.1146.1
 
 ---
-
-### ⚠️ Important: CDK v1 is End-of-Life
-AWS CDK v1 reached end-of-support on **June 1, 2023**. All resources below
-refer to **CDK v2** only. Make sure your students are using `aws-cdk-lib` (v2),
-not the old `@aws-cdk/core` (v1) packages.
-
----
 ### MCP Server
 
 - Great add-on for your preferred Coding Agent: the official **AWS IaC MCP Server** (inlcudes CDK features): https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server
